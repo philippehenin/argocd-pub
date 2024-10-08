@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dev-phe-app
+  labels:
+    name: dev-phe-app
+    istio-injection: enabled
+    prometheus: enabled
+    grafana: enabled
+
