@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: phe-app
-  namespace: dev-phe-app.v2
+  namespace: dev-phe-app-v2
   labels:
     app: phe-app
 spec:
