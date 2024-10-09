@@ -1,0 +1,30 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phe-app
+  namespace: dev-phe-app.v2
+  labels:
+    app: phe-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phe-app
+  template:
+    metadata:
+      labels:
+        app: phe-app
+    spec:
+      containers:
+        - name: phe-app
+          image: philippehenin/phe-app:v0.1.0
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
