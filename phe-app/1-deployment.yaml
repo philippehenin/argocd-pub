@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: phe-app
-          image: philippehenin/phe-app:v0.1.4
+          image: philippehenin/phe-app:v0.1.2
           ports:
             - containerPort: 80
           resources:
