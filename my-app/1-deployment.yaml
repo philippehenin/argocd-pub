@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: philippehenin/nginx:v0.1.3
+          image: philippehenin/nginx:v0.1.0
           ports:
             - containerPort: 80
